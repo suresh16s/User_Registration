@@ -39,11 +39,10 @@ else
 	echo "Phone Number Is Not Valid";
 fi 
 
-
-#Validate Password
+#validate Password
 read -p "Enter the password:" Password
-PAT6="^([A-Z]{1}[a-zA-Z]{8,}[0-9]{1,})$"
-if [[ $Password =~ $PAT6 ]]
+PAT7="^([A-Z]{1}[a-zA-Z]{8,})+[@-_]+[0-9]{1,}$"
+if [[ $Password =~ $PAT7 ]]
 then
         echo "Password Is Valid";
 else
