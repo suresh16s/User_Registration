@@ -37,4 +37,15 @@ then
 	echo "Phone Number Is Valid";
 else
 	echo "Phone Number Is Not Valid";
+fi 
+
+
+#Validate Pasword (User case 5)
+read -p "Enter the password:" Password
+PAT4="^[a-zA-Z]{8,}"
+if [[ $Password =~ $PAT4 ]]
+then
+        echo "Password Is Valid";
+else
+        echo "Password  Is Not Valid";
 fi
