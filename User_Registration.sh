@@ -40,10 +40,10 @@ else
 fi 
 
 
-#Validate Pasword (User case 5)
+#Validate Password 
 read -p "Enter the password:" Password
-PAT4="^[a-zA-Z]{8,}"
-if [[ $Password =~ $PAT4 ]]
+PAT5="^([A-Z]{1}[a-zA-Z]{8,})$"
+if [[ $Password =~ $PAT5 ]]
 then
         echo "Password Is Valid";
 else
