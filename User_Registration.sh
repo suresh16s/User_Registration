@@ -18,3 +18,12 @@ else
 	echo "Please enter valid last name:";
 fi
 
+#validate Email-id
+read -p "Enter the Email:" Email
+PAT='[0-9a-zA-Z]+[@-_+]+[a-z.]+[a-z.]+[a-z]'
+if [[ $Email =~ $PAT ]]
+then
+	echo "Valid Email:"
+else
+	echo "Please enter the valid Email:"
+fi
