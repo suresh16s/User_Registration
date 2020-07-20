@@ -20,7 +20,7 @@ fi
 
 #validate Email-id
 read -p "Enter the Email:" Email
-PAT='[0-9a-zA-Z]+[@-_+]+[a-z.]+[a-z.]+[a-z]'
+PAT=^[A-Za-z0-9]+([.+-][A-Za-z0-9]{3,})*@[A-Za-z0-9.]+[a-z]{2,3}([.][a-z0-9]{2,})*$'
 if [[ $Email =~ $PAT ]]
 then
 	echo "Valid Email:"
